@@ -1,0 +1,28 @@
+Llista 1: Composicio seq ´ uencial i alternativa ¨
+1. Convertiu una quantitat donada de segons en setmanes, dies, hores, minuts i segons.
+(sAsdhms.c)
+2. Calcul de l’ ` area i el volum d’una esfera, assegurant-se que el radi no sigui negatiu. ( ` esfera.c)
+3. Donat un nombre enter, escriviu si te nom ´ es un d ´ ´ıgit o no. (unDigit.c)
+4. Donats dos intervals [x0, x1] i [x2, x3] indiqueu si un es dins l’altre. ( ´ inclusioInterv.c)
+5. Donats dos intervals [x0, x1] i [x2, x3] escriviu l’interval interseccio o el missatge ”No intersequen”. ´
+(intersequen.c)
+6. Escriure un programa que indiqui si un any llegit es o no un any de trasp ´ as. ( ` anyTraspas.c)
+7. Calcul del m ` axim de tres nombres reals, usant com a m ` axim dues instruccions ` if. (maxim.c)
+8. Donats tres nombres reals, que representen les longituds dels costats d’un triangle, vegeu si poden formar
+triangle i de quin tipus es (acutangle, rectangle o obtusangle). ( ´ trianAng.c)
+9. Ordeneu tres nombres de menor a major, usant com a maxim tres instruccions ` if. (ordre3.c)
+10. Resoleu equacions polinomiques de segon grau, ` ax2 +bx +c = 0, tant si les solucions son reals com si ´
+son complexes. ( ´ equa2.c)
+11. Donat un temps en hores, minuts i segons, afegiu-li un segon i escriviu el nou temps de la forma
+hh:mm:ss. Per exemple, si donem 10 10 59, escriura 10:11:00. ( ` temps.c)
+12. Es tracta de simular una tirada del JOC DEL KIRIKI. En aquest joc juguen dues persones, que tiren dos
+daus que prenen valors de 1 a 6. Guanya la tirada la persona que aconsegueix la puntuacio m´ es alta. ´
+Puntuacions: La puntuacio m´ axima ` es la corresponent a un kiriki, ´ es a dir, quan surt un 1 i un 2; li ´
+donarem el valor de 50 punts. Despres venen les parelles (les que valen m ´ es s ´ on les de 6, i les que menys ´
+les de 1); el seu valor sera la seva suma m ` es 20 punts. Finalment si no ha sortit cap dels casos anteriors, ´
+s’han de sumar els valors dels daus.
+Un cop feta la tirada, el programa mostrara per pantalla la jugada obtinguda per cada jugador, analitzar ` a`
+la jugada de cada jugador i imprimira quin jugador ` es el guanyador i si hi ha algun kiriki ho indicar ´ a.`
+(kiriki.c)
+Per simular una jugada, generareu nombres pseudoaleatoris, entre el 1 i el 6. Cal que useu les funcions
+rand i srand de la biblioteca stdlib.h.
