@@ -9,25 +9,18 @@ int main (void) {
 	printf("Insert the number of seconds: ") ;
 	scanf("%d", &inSeconds) ;
 
-	while (inSeconds >= 60*60*24*7) {
-		inSeconds -= 60*60*24*7 ;
-		weeks++ ;
-	}
-	
-	while (inSeconds >= 60*60*24) {
-		inSeconds -= 60*60*24 ;
-		days++ ;
-	}
-	
-	while (inSeconds >= 60*60) {
-		inSeconds -= 60*60 ;
-		hours++ ;
-	}
+	 weeks = inSeconds / (60*60*24*7) ;
+        inSeconds %= 60*60*24*7 ;
 
-	while (inSeconds >= 60) {
-		inSeconds -= 60 ;
-		minutes++ ;
-	}
+        days = inSeconds / (60*60*24) ;
+        inSeconds %= 60*60*24 ;
+
+        hours = inSeconds / (60 * 60) ;
+        inSeconds %= 60*60 ;
+
+        minutes = inSeconds / 60 ;
+        inSeconds %= 60 ;
+	
 	printf("\nWeeks: %d\nDays: %d\nHours: %d\nMinutes: %d\nSeconds: %d\n", weeks, days, hours, minutes, inSeconds);
 
 	return 0 ;
