@@ -8,9 +8,15 @@ int main(void) {
 	srand(time(NULL)) ;
 
 	y0 = rand() % 10 ;
-	y1 = rand() % 10 ;
-	y2 = rand() % 10 ;
-	y3 = rand() % 10 ;
+	do {
+		y1 = rand() % 10 ;
+	} while (y1 == y0);
+	do {
+		y2 = rand() % 10 ;
+	} while (y2 == y1 || y2 == y0) ;
+	do {	
+		y3 = rand() % 10 ;
+	} while (y3 == y0 || y3 == y1 || y3 == y2) ;
 	
 	do {
 		contador++ ;
