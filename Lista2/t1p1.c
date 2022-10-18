@@ -1,20 +1,18 @@
 #include <stdio.h>
-#include <math.h>
 
 int sumDiv (int n) ;
 
 int main (void) {
-	int m, n1, n2, i = 1;
+	int m, n, i = 1;
 	
 	do {
 		printf("\nIntroduce un numero: ") ;
 		scanf(" %d", &m) ;
 	} while (m <= 1) ;
 
-	for (n2 = 3; n2 <= m; n2++) {
-		for (n1 = 2; n1 < n2; n1++){
-			if (sumDiv(n1) == n2 && n1 == sumDiv(n2)) printf("pareja %d: %d , %d\n", i++, n1, n2) ;
-		}
+	for (n = 3; n <= m; n++) {
+			if (sumDiv(sumDiv(n)) == n && sumDiv(n) < n)  printf("pareja %d: %d , %d\n", i++, sumDiv(n), n) ;
+		
 	} 
 
 	return 0;
