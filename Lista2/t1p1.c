@@ -3,7 +3,7 @@
 int sumDiv (int n) ;
 
 int main (void) {
-	int m, n, i = 1;
+	int m, n, i = 1, aux;
 	
 	do {
 		printf("\nIntroduce un numero: ") ;
@@ -11,7 +11,8 @@ int main (void) {
 	} while (m <= 1) ;
 
 	for (n = 3; n <= m; n++) {
-			if (sumDiv(sumDiv(n)) == n && sumDiv(n) < n)  printf("pareja %d: %d , %d\n", i++, sumDiv(n), n) ;
+		aux = sumDiv(n) ;
+		if (sumDiv(aux) == n && aux < n)  printf("pareja %d: %d , %d\n", i++, aux, n) ;
 		
 	} 
 
